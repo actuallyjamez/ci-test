@@ -4,10 +4,10 @@ ci-tests
 
 
 .. image:: https://img.shields.io/pypi/v/ci_tests.svg
-        :target: https://pypi.python.org/pypi/ci_tests
+        :target: https://pypi.python.org/pypi/ci-tests
 
-.. image:: https://img.shields.io/travis/actuallyjamez/ci_tests.svg
-        :target: https://travis-ci.org/actuallyjamez/ci_tests
+.. image:: https://travis-ci.org/actuallyjamez/ci-test.svg?branch=master
+        :target: https://travis-ci.org/actuallyjamez/ci-test
 
 .. image:: https://readthedocs.org/projects/ci-tests/badge/?version=latest
         :target: https://ci-tests.readthedocs.io/en/latest/?badge=latest
