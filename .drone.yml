@@ -5,16 +5,19 @@ name: Test
 steps:
     - name: Python 3.5
       image: python:3.5
+      depends_on: [ clone ]
       commands:
           - python setup.py install
           - python setup.py test
     - name: Python 3.6
       image: python:3.6
+      depends_on: [ clone ]
       commands:
           - python setup.py install
           - python setup.py test
     - name: Python 3.7
       image: python:3.7
+      depends_on: [ clone ]
       commands:
           - python setup.py install
           - python setup.py test
