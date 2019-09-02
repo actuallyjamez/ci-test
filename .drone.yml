@@ -1,32 +1,20 @@
 ---
 kind: pipeline
-name: Python 3.5
+name: Test
 
 steps:
-- name: test
-  image: python:3.5
-  commands:
-  - python setup.py install
-  - python setup.py test
-
----
-kind: pipeline
-name: Python 3.6
-
-steps:
-- name: test
-  image: python:3.6
-  commands:
-  - python setup.py install
-  - python setup.py test
-
----
-kind: pipeline
-name: Python 3.7
-
-steps:
-- name: test
-  image: python:3.7
-  commands:
-  - python setup.py install
-  - python setup.py test
+    - name: Python 3.5
+      image: python:3.5
+      commands:
+          - python setup.py install
+          - python setup.py test
+    - name: Python 3.6
+      image: python:3.6
+      commands:
+          - python setup.py install
+          - python setup.py test
+    - name: Python 3.7
+      image: python:3.7
+      commands:
+          - python setup.py install
+          - python setup.py test
