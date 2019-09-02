@@ -1,0 +1,10 @@
+---
+kind: pipeline
+name: Python 3.4
+
+steps:
+- name: build
+  image: python:3.4
+  commands:
+  - pip install -r requirements.txt
+  - python setup.py test
